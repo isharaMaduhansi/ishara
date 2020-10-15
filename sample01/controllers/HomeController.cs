@@ -10,7 +10,7 @@ namespace sample01.controllers
     {
         public String Index() {
 
-            return "hiiiiiii ishu";
+            return "Hiiiiiii Ishu";
         }
     }
 }
