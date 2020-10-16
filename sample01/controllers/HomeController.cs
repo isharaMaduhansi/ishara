@@ -8,9 +8,14 @@ namespace sample01.controllers
 {
     public class HomeController:Controller
     {
-        public String Index() {
+        public ViewResult Index()
+        {
+            return View();
+        }
 
-            return "Hiiiiiii Ishu";
+        public ViewResult AboutUs()
+        {
+            return View();
         }
     }
 }

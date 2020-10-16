@@ -18,9 +18,10 @@ namespace sample01.controllers
         }
 
 
-        public List<BookModel> GetAllBooks()
+        public ViewResult GetAllBooks()
         {
-            return bookRepository.GetAllBooks();
+            // return bookRepository.GetAllBooks();
+            return View();
         }
 
         public BookModel GetBook(int id) 
