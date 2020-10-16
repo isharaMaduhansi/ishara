@@ -15,7 +15,23 @@ namespace sample01.controllers
 
         public ViewResult AboutUs()
         {
+            var obj = new {id=1 , name="Ish" };
+            return View("Index",obj);
+        }
+
+        public ViewResult Contact()
+        {
             return View();
+        }
+
+        public ViewResult Description()
+        {
+            return View("OtherView/Des.cshtml");
+        }
+
+        public ViewResult Description2()
+        {
+            return View("../../OtherView/Des");
         }
     }
 }
