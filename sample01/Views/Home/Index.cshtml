@@ -6,30 +6,49 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width" />
     <title>Title of the document</title>
+    <link href="~/CSS/StyleSheet.css" rel="stylesheet" />
+    <script src="~/lib/jquery/jquery.js"></script>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+
 </head>
 
 <body>
 
     <h1>Home page</h1>
-    <h2>@DateTime.Now.ToString("dd-mm-yyyy")</h2>
-    <br>
-    <h2>@(4+5)</h2><br><br>
+    @*<h2>@DateTime.Now.ToString("dd-mm-yyyy")</h2>
+        <br>
+        <h2>@(4+5)</h2><br><br>
 
-    <h2>multiline</h2><br>
-    @{
-        int a = 10, b = 20, c = a + b;
-    }
+        <h2>multiline</h2><br>
+        @{
+            int a = 10, b = 20, c = a + b;
+        }
 
-    <h2>@c</h2><br>
+        <h2>@c</h2><br>
 
-    <h2>email is ishara@gmail.com</h2><br>
+        <h2>email is ishara@gmail.com</h2><br>
 
-    <h2>facebook - @@ishara</h2><br>
+        <h2>facebook - @@ishara</h2><br>*@
 
-
-
+    <img src="~/images/download.jpg" alt="logo" class="logo" />
+    <button id="btn1" type="button" class="btn btn-danger">Danger</button>
 
 </body>
 
+<script>
+    $(document).ready(function () {
+
+        $('#btn1').click(function () {
+            alert("Hi welcome");
+        });
+
+    });
+
+
+</script>
+
 </html>
+
+
